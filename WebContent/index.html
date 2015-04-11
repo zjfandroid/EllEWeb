@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EllE—未来已到来</title>
+<!-- add styles -->
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/style.css" rel="stylesheet" />
+
+<!-- 首页滑动切换 -->
+<link rel="stylesheet" href="css/demo2.css" />
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/ipresenter.packed.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$('#ipresenter').iPresenter({
+			animSpeed : 2000,
+			timer : '360Bar',
+			timerDiameter : 60,
+			timerStroke : 5,
+			timerPadding : 5,
+			timerColor : '#000',
+			timerBg : '#FFF',
+			timerOpacity : 0.4,
+			directionNav : false,
+			controlNav : true
+		});
+	});
+</script>
+
+</head>
+
+<body>
+
+	<ul id="nav">
+		<li><a href="contact.html">联系我们</a></li>
+		<li><a href="infrared.html">遥控盒子</a></li>
+		<li><a href="plug.html">插座</a></li>
+		<li><a href="bulb.html">球泡灯</a></li>
+		<li><a href="index.html">首页</a></li>
+		<img src="images/logo.png" style="margin-left: 5%; margin-top: 0.3%;">
+	</ul>
+	<div class="container">
+		<div id="ipresenter">
+			<div class="step" data-x="0" data-y="0"
+				data-thumbnail="img/thumbs/blub.png">
+				<img src="images/guide_01_img.jpg"/>
+			</div>
+
+			<div class="step" data-x="1500" data-y="0" data-rotatex="180"
+				data-easing="easeInOutQuint" data-pausetime="15000"
+				data-thumbnail="img/thumbs/plug.png">
+				<img src="images/big_plug_01.jpg" />
+			</div>
+
+			<div class="step" data-x="3000" data-y="0" data-rotatey="180"
+				data-pausetime="2000" data-thumbnail="img/thumbs/infrared.png">
+				<img src="images/infrared_01_img.jpg" />
+			</div>
+		</div>
+	</div>
+
+	<div class="footer1">
+		<div class="footer1left">
+			<div class="footer1leftleft">
+				<a href="index.html">首页</a><br /> <a href="plug.html">插座</a><br />
+				<a href="index.html">APP下载</a>
+			</div>
+			<div class="footer1leftright">
+				<a href="bulb.html">球泡灯</a><br /> <a href="infrared.html">遥控盒子</a><br />
+				<a href="contact.html">联系我们</a>
+			</div>
+		</div>
+		<div class="footer1middle">
+			<div class="footer1middleleft">
+				<img style="width: 80px" src="./images/rwm.png" />
+			</div>
+			<div class="footer1middleright">
+				<p>
+					联系电话：<br /> 181 2398 1588<br /> Email：<br />
+					jacklv88@elletechnology.com
+				</p>
+			</div>
+		</div>
+		<div class="footer1right">
+			尽情分享吧：<br /> <a href="javascript:void(0)"
+				onclick="alert('即将开启，敬请期待');"><img style="width: 70px"
+				src="./images/share_douban.png" /></a> <a href="javascript:void(0)"
+				onclick="alert('即将开启，敬请期待');"><img style="width: 70px"
+				src="./images/share_wx.png" /></a> <a href="javascript:void(0)"
+				onclick="alert('即将开启，敬请期待');"><img style="width: 70px"
+				src="./images/share_weibo.png" /></a> <a href="javascript:void(0)"
+				onclick="alert('即将开启，敬请期待');"><img style="width: 70px"
+				src="./images/share_tx.png" /></a>
+		</div>
+	</div>
+	<div class="footer2">
+		<br /> 未来已到来 <br />深圳依尼科技有限公司 2014 <br /> <br />
+	</div>
+</body>
+</html>
